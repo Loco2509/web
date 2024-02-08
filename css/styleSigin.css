@@ -1,0 +1,171 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+img {
+	object-fit: cover;
+}
+
+/* ---------------------------------------------------- */
+/*HEADER*/
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+	height: 10vh;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+}
+
+.logo img {
+	height: 7vh;
+	margin-right: 10px;
+}
+
+.info h1 {
+	color: #630000;
+	font-size: 45px;
+	letter-spacing: 1px;
+	margin-bottom: 20px;
+}
+
+.info p {
+	color: #000000;
+	line-height: 1.7;
+	margin-bottom: 30px;
+}
+
+/* ---------------------------------------------------- */
+/*MAIN */
+
+.signup-box {
+	width: 360px;
+	height: 620px;
+	margin: auto;
+	background-color: rgb(151, 151, 151);
+	border-radius: 3px;
+  }
+  
+  .login-box {
+	width: 360px;
+	height: 280px;
+	margin: auto;
+	border-radius: 3px;
+	background-color: rgb(151, 151, 151);
+	margin-top: 150px;
+  }
+  
+  .h1Intranet {
+	text-align: center;
+	padding-top: 15px;
+  }
+  
+  .h4Intranet {
+	text-align: center;
+  }
+  
+  .formIntranet {
+	width: 300px;
+	margin-left: 20px;
+  }
+  
+  .formIntranet label {
+	display: flex;
+	margin-top: 20px;
+	font-size: 18px;
+  }
+  
+  .formIntranet input {
+	width: 100%;
+	padding: 7px;
+	border: none;
+	border: 1px solid gray;
+	border-radius: 6px;
+	outline: none;
+  }
+  .formIntranet input[type="submit"] {
+	width: 320px;
+	height: 35px;
+	margin-top: 20px;
+	border: none;
+	background-color: #49c1a2;
+	color: white;
+	font-size: 18px;
+  }
+ .pIntranet {
+	text-align: center;
+	padding-top: 20px;
+	font-size: 15px;
+  }
+  .para-2 {
+	text-align: center;
+	color: black;
+	font-size: 15px;
+	margin-top: -10px;
+	padding-top: 20px;
+  }
+  .para-2 a {
+	color: #49c1a2;
+  }
+
+
+
+/* ---------------------------------------------------- */
+/*FOOTER*/
+
+.footer {
+	display: block;
+	width: 100%;
+	padding: 1%;
+	background-color: rgb(88, 88, 88);
+}
+
+.footer__title {
+	text-align: center;
+	line-height: normal;
+}
+
+.footer__info {
+	display: inline-block;
+	width: 48.5%;
+	text-align: center;
+}
+
+.contact-item {
+	text-align: center;
+}
+
+.footer__socialMedia {
+	display: inline-block;
+	text-align: center;
+	width: 48.5%;
+}
+
+.footer__socialMedia a {
+	margin-right: 10px;
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+}
+
+.footer__socialMedia img {
+width: 4vh;
+}
+
+.footer__links {
+	display: flex;
+	justify-content: space-around;
+	padding: 1%;
+}
+
+.footer__links a {
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+}

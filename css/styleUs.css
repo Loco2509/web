@@ -1,0 +1,410 @@
+/*NOSOTROS*/
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+img {
+	object-fit: cover;
+}
+/* ----------------------------------------------------------------- */
+/* HEADER */
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+	height: 10vh;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+}
+
+.logo img {
+	height: 7vh;
+	margin-right: 10px;
+}
+
+.nav-link {
+	text-decoration: none;
+	color: black;
+	font-weight: 600;
+	margin-right: 50px;
+	width: 10%;
+	float: left;
+	list-style: none;
+}
+
+.nav-link:hover {
+	color: whitesmoke;
+}
+
+@media (max-width: 768px) {
+	.nav_items{
+		position: absolute;
+		top: 10vh;
+		left: 0;
+		background: rgb(255, 240, 213);
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		height: -webkit-fill-available;
+		transform: translateX(-100%);
+		transition: 0.3s ease all;
+		justify-content: space-around;
+		align-items: center;
+		z-index: 10;
+	}
+	.nav_items a{ 
+		font-size: 7vw;
+	}
+	.nav_toggle{
+		display: flex !important;
+		flex-direction: column;                
+		margin: 15px;
+	}
+	.nav_toggle span{
+		width: 30px;
+		height: 4px;
+		background-color: rgb(88, 88, 88);
+		margin-bottom: 5px;
+		border-radius: 2px;             
+		transform-origin: 5px 0px;
+		transition: all 0.2s linear;
+	}
+	.close span{
+		transform: rotate(45deg) translate(0px, 0px);
+	}
+	.close span:nth-child(2){
+		display: none;
+	}
+	.close span:nth-child(3){
+		transform: rotate(-45deg) translate(-5px, 1px);
+	}
+	.open{ transform: translateX(0) !important}
+}
+/* ----------------------------------------------------------------- */
+/* MAIN */
+
+.main {
+	height: 80vh;
+	width: 100vw;
+}
+
+.bannerNosotros{
+    width: 100%;
+    height: 80vh;
+    animation: bannerNosotros 10s infinite linear alternate;
+    background-size: 100% 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes bannerNosotros {
+	0%, 20%{
+		background-image: url(../img/Banner.jpeg);
+	}
+	25%, 45%{
+		background-image: url(../img/imagen_carrusel1.jpg);
+	}
+	50%, 70%{
+		background-image: url(../img/imagen_carrusel2.png);
+	}
+	75%, 100%{
+		background-image: url(../img/imagen_carrusel3.png);
+	}
+}
+
+.bannercapaNosotros{
+	width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+	
+}
+
+.info{
+	z-index: 1;
+	width:100%;
+	max-width: 550px;
+    text-align: center;
+}
+
+.info h1 {
+    color: #fff;
+    font-size: 45px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.info p{
+    color: #c7c7c7;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+/*************** MODAL *****************/
+.flex{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.modal{
+	display: none;
+	position: fixed;
+	z-index: 1;
+	overflow: auto;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgb(0, 0, 0, 0.452);
+}
+
+.container-modal{
+	margin: auto;
+	background-color: #fefefe;	
+	width: 60%;
+	border-radius: 6px;
+	padding: 3em 2.5em;
+	text-align: justify;
+	display: grid;
+	gap: 1em;
+	place-items: center;
+	grid-auto-columns: 100%;
+
+}
+
+.close{
+	text-decoration: none;
+	color: #fff;
+	background-color: #f26250;
+	padding: 1em 3em;
+	border: 1px solid;
+	border-radius: 6px;
+	display: inline-block;
+	font-weight: 300;
+	transition: background-color .3s;
+
+}
+.close:hover{
+	color: #f26250 ;
+	background-color: #fff;	
+}
+
+.ButtonModal{
+	text-decoration: none;
+	
+	padding: 1em 3em;
+	border: 1px solid;
+	border-radius: 6px;
+	display: inline-block;
+	font-weight: 300;
+	transition: background-color .3s;
+
+}
+.ButtonModal:hover{
+	color: #f26250 ;
+	background-color: #fff;	
+}
+
+
+
+
+
+
+/* MISION Y VISION */
+.visionymision {
+    width: 100%;
+	height: 80vh;
+	padding: 50px;
+	display: flex;
+}
+
+.Vision {
+	width: 50%;
+	float: left;
+	margin-right: 20px;
+}
+
+.Vision img{
+	width: 100%;
+}
+
+.Mision {
+	width: 50%;
+	float: left;
+	margin-left: 20px;
+}
+
+.Mision img{
+	width: 100%;
+}
+
+/* ----------------------------------------------------------------- */
+/*FOOTER*/
+
+.footer {
+	display: block;
+	width: 100%;
+	padding: 1%;
+	background-color: rgb(88, 88, 88);
+    color: white;  /* Cambio el color del texto a blanco */
+}
+
+.footer__title {
+	text-align: center;
+	line-height: normal;
+    color: white;  /* Cambio el color del título a blanco */
+}
+
+.footer__info {
+	display: inline-block;
+	width: 48.5%;
+	text-align: center;
+    color: white;  /* Cambio el color de la info a blanco */
+}
+
+.contact-item {
+	text-align: center;
+    color: white;  /* Cambio el color del item de contacto a blanco */
+}
+
+.footer__socialMedia {
+	display: inline-block;
+	text-align: center;
+	width: 48.5%;
+}
+
+.footer__socialMedia a {
+	margin-right: 10px;
+	text-decoration: none;
+    color: white;  /* Cambio el color de los enlaces de las redes sociales a blanco */
+}
+
+.footer__socialMedia img {
+width: 4vh;
+}
+
+.footer__links {
+	display: flex;
+	justify-content: space-around;
+	padding: 1%;
+}
+
+.footer__links a {
+	text-decoration: none;
+    color: white;  /* Cambio el color de los enlaces del footer a blanco */
+}
+/* Anadi una transicion suave a la transformacion de las imagenes dentro de los enlaces de redes sociales */
+.footer__socialMedia img {
+	width: 4vh;
+	transition: transform 0.15s ease;
+  }
+  
+  /* Especifica que cuando pasas el cursor sobre un enlace, la imagen dentro del enlace crecera un 10% */
+  .footer__socialMedia a:hover img {
+	transform: scale(1.5);
+  }
+  
+  .footer__links {
+	display: flex;
+	justify-content: space-around;
+	padding: 1%;
+  }
+  
+  .footer__links a {
+	text-decoration: none;
+    color: white;  /* Cambio el color de los enlaces del footer a blanco */
+  }
+
+/* Estilos para el modal */
+
+.modal-background {
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Estilos para el botón "Acepto" */
+.accept-button {
+    display: block;
+    width: 100px;
+    height: 30px;
+    margin: 20px auto;
+    background-color: #4CAF50; /* color de fondo verde */
+    color: white; /* texto blanco */
+    text-align: center;
+    line-height: 30px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.accept-button:hover {
+    background-color: #45a049; /* color de fondo verde oscuro al pasar el cursor */
+}
+.modal-content {
+	width: 60%;
+	background-color: #fefefe;
+	margin: 15% auto;
+	padding: 20px;
+	border: 1px solid #888;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	animation-name: animatetop;
+	animation-duration: 0.4s;
+	overflow: auto; /* Agrega la barra de desplazamiento si el contenido es demasiado grande */
+	height: 400px; /* Puedes ajustar la altura según tus necesidades */
+  }
+  
+  /* Estilos para la barra de desplazamiento */
+  .modal-content::-webkit-scrollbar {
+	width: 10px;
+  }
+  
+  .modal-content::-webkit-scrollbar-thumb {
+	background: #888;
+  }
+  
+  .modal-content::-webkit-scrollbar-thumb:hover {
+	background: #555;
+  }

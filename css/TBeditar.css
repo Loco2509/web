@@ -1,0 +1,24 @@
+*{
+	font-family: Calibri;
+}
+body{
+	padding: 20px;
+}
+a{
+	background: #C1C1C1;
+	padding: 10px 20px;
+	font-size: 14px;
+	border: 1px solod #C1C1C1;
+	border-radius: 10px;
+	color: #000000;
+	text-decoration: none;
+}
+table{
+	width: 100%;
+	margin-top: 30px;
+}
+table th, table td{
+	padding: 10px 20px;
+	font-size: 14px;
+	border: 1px solid #C1C1C1;
+}
